@@ -1,211 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akam Sunny P.</title>
-    <link rel="stylesheet" href="/static/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akam Sunny P. | Data Scientist Portfolio</title>
+  <link rel="stylesheet" href="static/style.css" />
+  <meta name="description" content="Portfolio of Akam Sunny Peter — Data Scientist and Machine Learning Engineer. Showcasing AI, ML, and data-driven projects." />
 </head>
+
 <body>
-    <header class="header">
-        <div class="logo">Data Porfolio</div>
-        <nav class="nav">
-            <ul>
-           <!-- <li>Home</li> -->
-            <!--<li>About</li>-->    
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><button id="theme-toggle">🌙</button></li>
-                <li><button class="cta-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get In Touch</button></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Data Portfolio</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li>
+          <button id="theme-toggle">🌙</button>
+        </li>
+        <li>
+          <button class="cta-btn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
+            Get In Touch
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Hey, I'm Akam Sunny Peter.<br>Data Scientist</h1>
-            <p>Transforming raw data into actionable insights. From machine learning models to stunning visualizations, I uncover patterns that drive impactful decisions.</p>
-            <div class="services">
-                <div class="service">🤖 Machine Learning</div>
-                <div class="service">📊 Data Analysis</div>
-                <div class="service">🔮 Predictive Modeling</div>
-                <div class="service">📈 Data Visualization</div>
-                <div class="service">👁️‍🗨️ Computer Vision</div>
-                <div class="service">📈 Time Series Analysis</div>
-            </div>
-            <button class="view-projects" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Click or Scroll down to see Contact & Projects</button>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hey, I'm Akam Sunny Peter.<br />Data Scientist</h1>
+      <p>
+        Transforming raw data into actionable insights. From machine learning models to stunning visualizations, I uncover patterns that drive impactful decisions.
+      </p>
+
+      <div class="services">
+        <div class="service">🤖 Machine Learning</div>
+        <div class="service">📊 Data Analysis</div>
+        <div class="service">🔮 Predictive Modeling</div>
+        <div class="service">📈 Data Visualization</div>
+        <div class="service">👁️‍🗨️ Computer Vision</div>
+        <div class="service">📈 Time Series Analysis</div>
+      </div>
+
+      <button class="view-projects" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
+        Click or Scroll down to see Contact & Projects
+      </button>
+    </div>
+
+    <div class="profile-backdrop">
+      <img src="static/images/my.jpg" alt="Akam Sunny Peter profile" class="profile-img" />
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="clients" id="contact">
+    <p>Get in Touch</p>
+    <div class="client-logos">
+      <a href="mailto:akamsunny@gmail.com" class="logo-item">
+        📧 Gmail
+      </a>
+      <a href="https://www.linkedin.com/in/akam-sunny-peter-915a77346" target="_blank" class="logo-item">
+        💼 LinkedIn
+      </a>
+      <a href="https://github.com/AkamSunny" target="_blank" class="logo-item">
+        💻 GitHub
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h4>Behind the Data</h4>
+    <h2>Shaping Insights That<br />Make Decisions Simpler</h2>
+    <p>
+      I'm a data scientist passionate about extracting meaningful stories from complex datasets. With expertise in machine learning, statistical analysis, and data visualization, I build robust solutions that turn data chaos into clarity.
+    </p>
+    <p>
+      Whether it's predicting customer behavior, optimizing business processes, or creating interactive dashboards, I thrive on solving real-world problems through data-driven innovation.
+    </p>
+    <p class="build-together">
+      Let's Analyze Something Impactful<br />Together.
+    </p>
+    <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
+      Get In Touch
+    </button>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2>Portfolio Projects</h2>
+    <div class="project-gallery">
+
+      <div class="project-card">
+        <img src="static/images/BCA.jpg" alt="BreastCare Project" />
+        <div class="project-content">
+          <h3>BreastCare</h3>
+          <a href="https://breastcare-production.up.railway.app/" target="_blank">View Project →</a>
+          <details>
+            <summary>Learn More</summary>
+            <p>
+              This app assists oncologists by offering AI-driven diagnostics for early breast cancer detection. It streamlines the diagnostic process, reduces uncertainty, and helps professionals focus on patient care.
+            </p>
+          </details>
         </div>
-        <div class="profile-backdrop">
-            <img src="/static/images/my.jpg" alt="Your Profile" class="profile-img">
+      </div>
+
+      <div class="project-card">
+        <img src="static/images/Aksun.jpg" alt="Aksun Finance Project" />
+        <div class="project-content">
+          <h3>AkSun Finance</h3>
+          <a href="https://huggingface.co/spaces/chemman/Loan-Assessment-App" target="_blank">View Project →</a>
+          <details>
+            <summary>Learn More</summary>
+            <p>
+              Built an AI-powered loan assessment system for a fintech startup. Achieved 85% reduction in manual review time and 73% improvement in default prediction accuracy with real-time decision support.
+            </p>
+          </details>
         </div>
-    </section>
+      </div>
 
-    <section class="clients" id="contact">
-        <p>Get in Touch</p>
-        <div class="client-logos">
-            <a href="mailto:akamsunny@gmail.com" class="logo-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="2" y="4" width="20" height="16" rx="2"/>
-                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-                </svg>
-                Gmail
-            </a>
-            <a href="https://www.linkedin.com/in/akam-sunny-peter-915a77346?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="logo-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                    <rect x="2" y="9" width="4" height="12"/>
-                    <circle cx="4" cy="4" r="2"/>
-                </svg>
-                LinkedIn
-            </a>
-            <a href="https://github.com/AkamSunny" target="_blank" class="logo-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                    <rect x="2" y="9" width="4" height="12"/>
-                    <circle cx="4" cy="4" r="2"/>
-                </svg>
-                Github
-            </a>
+      <div class="project-card">
+        <img src="static/images/TSA.jpg" alt="Bitcoin Forecast Project" />
+        <div class="project-content">
+          <h3>Bitcoin Price Prediction</h3>
+          <a href="https://github.com/AkamSunny/Data-Science-AI-Projects/tree/main/Time%20Series%20Analysis/Bitcoin%20Forecasting%20%26%20Analysis" target="_blank">View Project →</a>
+          <details>
+            <summary>Learn More</summary>
+            <p>
+              Forecasted Bitcoin prices using Facebook Prophet, analyzing seasonality and market trends to draw actionable insights.
+            </p>
+          </details>
         </div>
-    </section>
+      </div>
 
-    <section class="about">
-        <h4>Behind the Data</h4>
-        <h2>Shaping Insights That<br>Make Decisions Simpler</h2>
-        <p>I'm a data scientist passionate about extracting meaningful stories from complex datasets. With expertise in machine learning, statistical analysis, and data visualization, I build robust solutions that turn data chaos into clarity.</p>
-        <p>Whether it's predicting customer behavior, optimizing business processes, or creating interactive dashboards, I thrive on solving real-world problems through data-driven innovation.</p>
-        <p class="build-together">Let's Analyze Something Impactful<br>Together.</p>
-        <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get In Touch</button>
-    </section>
-
-    <section class="projects" id="projects">
-        <h2>Portfolio Projects</h2>
-        <div class="project-gallery">
-            <div class="project-card">
-                <img src="/static/images/BCA.jpg" alt="Project 1">
-                <div class="project-content">
-                    <h3>BreastCare</h3>
-                    <a href="https://breastcare-production.up.railway.app/" target="_blank">View Project →</a>
-                    <details>
-                        <summary>Learn More</summary>
-                        <p>Early and accurate diagnosis of breast cancer is critical for patient outcomes. Yet, doctors and oncologists often face challenges.
-                            This app is built to support professionals, not replace them by giving an additional AI-driven perspective, it helps streamline the diagnostic process, reduce uncertainty, and allow clinicians to focus more on patient care. 
-                            </p>
-                    </details>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="/static/images/Aksun.jpg" alt="Project 2">
-                <div class="project-content">
-                    <h3>AkSun Finance</h3>
-                    <a href="https://huggingface.co/spaces/chemman/Loan-Assessment-App" target="_blank">View Project →</a>
-                    <details>
-                        <summary>Learn More</summary>
-                        <p>From Business Problem to Production AI: I Built this App for an innovative fintech startup facing a critical business challenge
-                             their manual loan approval process was causing inconsistent decisions and missed opportunities. 
-                            The Results Delivered:
-• 85% reduction in manual review time per application
-• 73% improvement in default prediction accuracy
-• Real-time decisions (under 3 seconds vs. 15+ minutes previously)
-• Consistent, data-driven approach across all loan assessments
-</p>
-                    </details>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="/static/images/TSA.jpg" alt="Project 3">
-                <div class="project-content">
-                    <h3>A Bitcoin Price prediction</h3>
-                    <a href="https://github.com/AkamSunny/Data-Science-AI-Projects/tree/main/Time%20Series%20Analysis/Bitcoin%20Forecasting%20%26%20Analysis" target="_blank">View Project →</a>
-                    <details>
-                        <summary>Learn More</summary>
-                        <p>This project focuses on the prediction of Bitcoin prices using Facebook Prophet which is a very sophisticated model for TSA.
-                            It follows a proper Analysis and study of seasonality and market trends to draw insight on what the commodity will look like in the future.
-                        </p>
-                    </details>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="/static/images/rec.jpg" alt="Project 4">
-                <div class="project-content">
-                    <h3>Recommender system</h3>
-                    <a href="https://github.com/AkamSunny/Data-Science-AI-Projects/tree/main/Recommender%20system/Movie%20Recommender" target="_blank">View Project →</a>
-                    <details>
-                        <summary>Learn More</summary>
-                        <p>Designed and implemented a content-based recommendation engine using cosine similarity to suggest movies to users.
-                        Processed a dataset of over 10,000 movies, enhancing user engagement for a streaming service prototype.</p>
-                    </details>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="/static/images/churn.jpg" alt="Project 5">
-                <div class="project-content">
-                    <h3>Customer Churn Analysis</h3>
-                    <a href="https://github.com/AkamSunny/Data-Science-AI-Projects/tree/main/Analytics" target="_blank">View Project →</a>
-                    <details>
-                        <summary>Learn More</summary>
-                        <p>On this Project i went all in to uncover insight on why customer churn for a Telco Company. 
-                            studying customer behaviour and their product choices. i wnet on to build a predictive model to
-                            to flag at risk customers, Thus Enabling proactive retention strategy.</p>
-                    </details>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="/static/images/xray.jpg" alt="Project 6">
-                <div class="project-content">
-                    <h3>Medical X-ray Image Detector</h3>
-                    <a href="https://xray-pneumonia-classifier.streamlit.app/" target="_blank">View Project →</a>
-                    <details>
-                        <summary>Learn More</summary>
-                        <p>This X-ray Image app uses deep learning to detect abnormalities in medical images, providing rapid preliminary diagnoses for 
-                            pneumonia. By serving as an AI-powered assistant to healthcare professionals, it enhances diagnostic accuracy, reduces interpretation time, and improves patient
-                             outcomes particularly in underserved areas where radiology expertise may be limited. The application represents a significant step toward accessible, AI-augmented healthcare,
-                              potentially saving lives through earlier detection and treatment.
-                        </p>
-                    </details>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="/static/images/clean.jpg" alt="Project 4">
-                <div class="project-content">
-                    <h3>Data Cleaning</h3>
-                    <a href="https://github.com/AkamSunny/Data-Science-AI-Projects/tree/main/Data%20Cleaning" target="_blank">View Project →</a>
-                    <details>
-                        <summary>Learn More</summary>
-                        <p>This Project focuses on Data cleaning which involves identifying and correcting errors, inconsistencies, 
-                            and inaccuracies in datasets to ensure quality and reliability. This process typically includes handling missing values, removing duplicates, standardizing formats, and validating data integrity. Proper data cleaning transforms raw, messy data into a structured format ready for analysis,
-                             which is crucial for obtaining accurate insights and making informed decisions.</p>
-                    </details>
-                </div>
-            </div>
+      <div class="project-card">
+        <img src="static/images/rec.jpg" alt="Movie Recommendation System" />
+        <div class="project-content">
+          <h3>Movie Recommender System</h3>
+          <a href="https://github.com/AkamSunny/Data-Science-AI-Projects/tree/main/Recommender%20system/Movie%20Recommender" target="_blank">View Project →</a>
+          <details>
+            <summary>Learn More</summary>
+            <p>
+              Designed a content-based recommendation engine using cosine similarity, improving engagement on a streaming service prototype.
+            </p>
+          </details>
         </div>
-    </section>
+      </div>
 
-    <script>
-        const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
+      <div class="project-card">
+        <img src="static/images/churn.jpg" alt="Customer Churn Analysis" />
+        <div class="project-content">
+          <h3>Customer Churn Analysis</h3>
+          <a href="https://github.com/AkamSunny/Data-Science-AI-Projects/tree/main/Analytics" target="_blank">View Project →</a>
+          <details>
+            <summary>Learn More</summary>
+            <p>
+              Analyzed customer behavior for a Telco company and built predictive models to identify at-risk customers, enabling proactive retention strategies.
+            </p>
+          </details>
+        </div>
+      </div>
 
-        // Check for saved theme preference or default to light mode
-        const currentTheme = localStorage.getItem('theme') || 'light';
-        body.setAttribute('data-theme', currentTheme);
-        themeToggle.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+      <div class="project-card">
+        <img src="static/images/xray.jpg" alt="X-Ray Detector App" />
+        <div class="project-content">
+          <h3>Medical X-ray Image Detector</h3>
+          <a href="https://xray-pneumonia-classifier.streamlit.app/" target="_blank">View Project →</a>
+          <details>
+            <summary>Learn More</summary>
+            <p>
+              Built a deep learning model for pneumonia detection from chest X-rays, enhancing diagnostic accuracy and accessibility in underserved regions.
+            </p>
+          </details>
+        </div>
+      </div>
 
-        themeToggle.addEventListener('click', () => {
-            const theme = body.getAttribute('data-theme');
-            const newTheme = theme === 'light' ? 'dark' : 'light';
-            
-            body.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
-        });
+      <div class="project-card">
+        <img src="static/images/clean.jpg" alt="Data Cleaning Automation" />
+        <div class="project-content">
+          <h3>Data Cleaning Automation</h3>
+          <a href="https://github.com/AkamSunny/Data-Science-AI-Projects/tree/main/Data%20Cleaning" target="_blank">View Project →</a>
+          <details>
+            <summary>Learn More</summary>
+            <p>
+              Developed a data cleaning tool to handle missing values, remove duplicates, and validate data integrity—preparing datasets for high-quality analysis.
+            </p>
+          </details>
+        </div>
+      </div>
 
-        // Smooth scroll for navigation links
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                document.getElementById(targetId).scrollIntoView({behavior: 'smooth'});
-            });
-        });
-    </script>
+    </div>
+  </section>
+
+  <!-- Theme & Navigation Scripts -->
+  <script>
+    const themeToggle = document.getElementById("theme-toggle");
+    const body = document.body;
+    const currentTheme = localStorage.getItem("theme") || "light";
+    body.setAttribute("data-theme", currentTheme);
+    themeToggle.textContent = currentTheme === "dark" ? "☀️" : "🌙";
+
+    themeToggle.addEventListener("click", () => {
+      const newTheme = body.getAttribute("data-theme") === "light" ? "dark" : "light";
+      body.setAttribute("data-theme", newTheme);
+      localStorage.setItem("theme", newTheme);
+      themeToggle.textContent = newTheme === "dark" ? "☀️" : "🌙";
+    });
+
+    // Smooth scrolling for navigation
+    document.querySelectorAll(".nav-link").forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        const target = document.getElementById(link.getAttribute("href").substring(1));
+        target.scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  </script>
 </body>
 </html>

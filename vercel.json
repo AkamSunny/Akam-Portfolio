@@ -3,6 +3,6 @@
   "public": true,
   "routes": [
     { "src": "/static/(.*)", "dest": "/static/$1" },
-    { "src": "/(.*)", "dest": "/templates/index.html" }
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
