@@ -358,9 +358,10 @@ body {
     letter-spacing: -1px;
 }
 
+/* FIXED: Changed from auto-fit to fixed 3 columns */
 .project-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
@@ -445,6 +446,13 @@ body {
     color: var(--text-secondary);
 }
 
+/* Responsive breakpoints for smaller screens */
+@media (max-width: 1200px) {
+    .project-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
     .hero {
         flex-direction: column-reverse;
@@ -477,5 +485,9 @@ body {
 
     .nav ul {
         gap: 20px;
+    }
+    
+    .project-gallery {
+        grid-template-columns: 1fr;
     }
 }
